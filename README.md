@@ -54,7 +54,9 @@ https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusio
 |-------------|-----------|
 | F1-score    | ≥ 0.59 ✅ |
 | AUC-ROC     | ✓ calculada |
-| R² y MAE    | ✖️ Inapropiadas (el problema es de clasificación, no de regresión) |
+| R² y EAM    | ✖️ Simulación (no aplican: son datos de clasificación*) |
+
+*Este código te permite entender y evaluar las métricas R² y MAE en un contexto de regresión, utilizando datos simulados para ilustrar
 
 ---
 
