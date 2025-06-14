@@ -29,6 +29,9 @@ Visualizaciones interactivas con Plotly:
 - Matriz de confusión con hover  
 - En preparación para un dashboard futuro con Streamlit
 
+
+[Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
+
 ---
 
 ## 🛠️ Herramientas Utilizadas
