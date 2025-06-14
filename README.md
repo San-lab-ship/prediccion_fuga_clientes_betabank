@@ -27,7 +27,7 @@ Visualizaciones interactivas con Plotly:
 
 - Probabilidad de deserción por cliente (gráfico de dispersión)  
 - Matriz de confusión con hover  
-- En preparación para un dashboard futuro con Streamlit
+
 
 
 [Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
