@@ -32,6 +32,8 @@ Visualizaciones interactivas con Plotly:
 
 [Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
 
+https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusion.html
+
 ---
 
 ## 🛠️ Herramientas Utilizadas
