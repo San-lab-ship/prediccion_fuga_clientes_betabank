@@ -17,6 +17,7 @@ Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank aba
 
 -Simulación y visualización: creación de un conjunto de datos sintético para ilustrar el mal uso de métricas de regresión en clasificación. Visualizaciones interactivas con Plotly para facilitar la interpretación del modelo.
 
+
 ## Parámetros del Modelo
 
 | Parámetro                        | Valor / Descripción                                                          |
@@ -26,16 +27,19 @@ Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank aba
 | Métrica principal optimizada     | F1-score ≥ `0.59`                                                            |
 | Criterio de selección del modelo | Mejor desempeño validado y capacidad de generalización sobre datos de prueba |
 
+
 ## Visualizaciones
 Curva ROC: muestra la sensibilidad frente a la tasa de falsos positivos
 
 Matriz de Confusión Interactiva: análisis detallado por categoría
+![image](https://github.com/user-attachments/assets/062a64b9-2818-41d6-a7a0-16f941b04fd3)
 
 Probabilidad de Deserción (Plotly): dispersión coloreada por probabilidad de churn
 
 [Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
 
 https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusion.html
+
 
 ## Tecnologías Utilizadas
 
@@ -52,11 +56,13 @@ https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusio
 
 
 ## Métricas Clave
+
 | Métrica  | Valor                   | Observación                                                             |
 | -------- | ----------------------- | ----------------------------------------------------------------------- |
 | F1-score | ≥ 0.59 ✅               | Supera el umbral mínimo requerido                                       |
 | AUC-ROC  | ✓ calculada             | Buen desempeño en discriminación de clases                              |
 | R² y MAE | ✖️ (solo en simulación) | Usadas solo en un contexto ilustrativo para explicar su inaplicabilidad |
+
 
 ## Conclusión
 
@@ -76,5 +82,3 @@ Este proyecto demuestra un enfoque completo de ciencia de datos aplicado al sect
 │   └── datos_regresion.csv
 └── utils/
     └── funciones_metricas.py
-
-
