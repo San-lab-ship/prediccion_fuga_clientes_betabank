@@ -1,70 +1,80 @@
-#  Predicción de Fuga de Clientes – Beta Bank
+# Predicción de Fuga de Clientes – Beta Bank
 
 Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank abandonará el servicio, utilizando datos históricos de comportamiento. El modelo ha sido entrenado y validado con métricas exigentes como F1 y AUC-ROC, superando el umbral mínimo requerido de 0.59 en F1-score. Además, se incluyen simulaciones, regresión lineal y visualizaciones interactivas para facilitar la comprensión del comportamiento del cliente.
 
----
-
-##  Archivos del Proyecto
-
-###  1. `modelo_fuga_clientes.ipynb`
-Notebook principal que incluye:
-
-- ✅ Preprocesamiento de Datos  
-- ✅ División en conjunto de entrenamiento, validación y prueba  
-- ✅ Entrenamiento de varios modelos (DecisionTree, RandomForest, etc.)  
-- ✅ Evaluación con F1-score y AUC-ROC  
-- ✅ Prueba final del mejor modelo  
-- ✅ Gráficas (matriz de confusión, curva ROC, etc.)
-
-### 2. `simulacion_regresion_lineal.ipynb`
-Simulación complementaria de datos usando regresión lineal para demostrar por qué métricas como R² y MAE no son adecuadas en un problema de clasificación.
-
-- R² Score inapropiado  
-- MAE solo para regresión
-
-### 3. `graficas_interactivas.ipynb`
-Visualizaciones interactivas con Plotly:
-
-- Probabilidad de deserción por cliente (gráfico de dispersión)  
-- Matriz de confusión con hover  
+## Arquitectura del Proyecto
 
 
+## Metodología
+
+-Análisis Exploratorio de Datos (EDA): revisión de la distribución de variables numéricas y categóricas, identificación de valores atípicos y análisis de correlaciones.
+
+-Preprocesamiento de datos: imputación de valores faltantes, codificación de variables categóricas y escalado de variables numéricas.
+
+-Entrenamiento de modelos: implementación de modelos de árbol de decisión y random forest, incluyendo validación cruzada y ajuste de hiperparámetros.
+
+-Evaluación: uso de métricas como F1-score y AUC-ROC. También se incluyen ejemplos comparativos de métricas inadecuadas para clasificación como MAE y R².
+
+-Simulación y visualización: creación de un conjunto de datos sintético para ilustrar el mal uso de métricas de regresión en clasificación. Visualizaciones interactivas con Plotly para facilitar la interpretación del modelo.
+
+## Parámetros del Modelo
+
+| Parámetro                        | Valor / Descripción                                                          |
+| -------------------------------- | ---------------------------------------------------------------------------- |
+| División de datos                | 60 % entrenamiento, 20 % validación, 20 % prueba                             |
+| Random State                     | `12345` (para garantizar la reproducibilidad de resultados)                  |
+| Métrica principal optimizada     | F1-score ≥ `0.59`                                                            |
+| Criterio de selección del modelo | Mejor desempeño validado y capacidad de generalización sobre datos de prueba |
+
+## Visualizaciones
+Curva ROC: muestra la sensibilidad frente a la tasa de falsos positivos
+
+Matriz de Confusión Interactiva: análisis detallado por categoría
+
+Probabilidad de Deserción (Plotly): dispersión coloreada por probabilidad de churn
 
 [Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
 
 https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusion.html
 
----
+## Tecnologías Utilizadas
 
-## 🛠️ Herramientas Utilizadas
+✔️ Python 3.10 / 3.11
+✔️ Pandas
+✔️ NumPy
+✔️ Scikit-learn
+✔️ Plotly
+✔️ Seaborn
+✔️ Jupyter Notebook / Google Colab
+✔️ Joblib
+✔️ Draw.io (para arquitectura y flujos)
+✔️ Streamlit (en desarrollo para versión web del modelo)
 
-- Python 3.11  
-- Pandas, Numpy  
-- Scikit-learn  
-- Plotly  
-- Seaborn  
-- Google Colab  
-- Streamlit (en desarrollo)
 
----
+## Métricas Clave
+| Métrica  | Valor                   | Observación                                                             |
+| -------- | ----------------------- | ----------------------------------------------------------------------- |
+| F1-score | ≥ 0.59 ✅               | Supera el umbral mínimo requerido                                       |
+| AUC-ROC  | ✓ calculada             | Buen desempeño en discriminación de clases                              |
+| R² y MAE | ✖️ (solo en simulación) | Usadas solo en un contexto ilustrativo para explicar su inaplicabilidad |
 
-## 📌 Métricas Clave
+## Conclusión
 
-| Métrica     | Valor     |
-|-------------|-----------|
-| F1-score    | ≥ 0.59 ✅ |
-| AUC-ROC     | ✓ calculada |
-| R² y EAM    | ✖️ Simulación (no aplican: son datos de clasificación*) |
+Este proyecto demuestra un enfoque completo de ciencia de datos aplicado al sector financiero, desde el preprocesamiento hasta la evaluación crítica de métricas. A través de simulaciones y visualizaciones interactivas, se facilita la interpretación del modelo y sus limitaciones, destacando el valor de un análisis bien fundamentado. Esta base permite futuras extensiones hacia aplicaciones reales, dashboards interactivos o integraciones con plataformas de retención de clientes.
 
-*Este código te permite entender y evaluar las métricas R² y EAM en un contexto de regresión, utilizando datos simulados para ilustrar
+## Estructura del Proyecto
+```
+├── modelo_fuga_clientes.ipynb
+├── simulacion_regresion_lineal.ipynb
+├── graficas_interactivas.ipynb
+├── README.md
+├── requirements.txt
+├── visuals/
+│   ├── matriz_confusion.png
+│   └── curva_roc.png
+├── simulacion/
+│   └── datos_regresion.csv
+└── utils/
+    └── funciones_metricas.py
 
----
 
-##  Autora 
-San-lab-ship (2025)
-
----
-
-## Comentarios Finales
-
-Este proyecto demuestra un enfoque integral de ciencia de datos, desde el preprocesamiento hasta la visualización y reflexión crítica sobre métricas. Es una excelente base para extender a aplicaciones reales o dashboards en producción.
