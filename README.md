@@ -2,9 +2,6 @@
 
 Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank abandonará el servicio, utilizando datos históricos de comportamiento. El modelo ha sido entrenado y validado con métricas exigentes como F1 y AUC-ROC, superando el umbral mínimo requerido de 0.59 en F1-score. Además, se incluyen simulaciones, regresión lineal y visualizaciones interactivas para facilitar la comprensión del comportamiento del cliente.
 
-## Arquitectura del Proyecto
-
-
 ## Metodología
 
 -Análisis Exploratorio de Datos (EDA): revisión de la distribución de variables numéricas y categóricas, identificación de valores atípicos y análisis de correlaciones.
