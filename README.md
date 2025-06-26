@@ -37,7 +37,8 @@ Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank aba
 
 -Matriz de Confusión Interactiva: análisis detallado por categoría
 
-![image](https://github.com/user-attachments/assets/062a64b9-2818-41d6-a7a0-16f941b04fd3)
+![image](https://github.com/user-attachments/assets/fa8c3d66-7450-4866-aaa3-9c0485583374)
+
 
 https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusion.html
 
