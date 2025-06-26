@@ -29,19 +29,21 @@ Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank aba
 
 
 ## Visualizaciones
-Curva ROC: muestra la sensibilidad frente a la tasa de falsos positivos
+
+-Curva ROC: muestra la sensibilidad frente a la tasa de falsos positivos
+
 ![image](https://github.com/user-attachments/assets/b9a7fa05-36e3-43ee-9bb0-e5c604d548a1)
 
 
-Matriz de Confusión Interactiva: análisis detallado por categoría
+-Matriz de Confusión Interactiva: análisis detallado por categoría
 
 ![image](https://github.com/user-attachments/assets/062a64b9-2818-41d6-a7a0-16f941b04fd3)
 
 https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/matriz_confusion.html
 
-Probabilidad de Deserción (Plotly): dispersión coloreada por probabilidad de churn
+-Dispersión de Clases (Conjunto de Prueba)
 
-[Ver gráfica interactiva en GitHub Pages](https://san-lab-ship.github.io/prediccion_fuga_clientes_betabank/)
+![image](https://github.com/user-attachments/assets/bd2b1895-30e6-434e-8a0a-3785bfad0340)
 
 
 ## Tecnologías Utilizadas
