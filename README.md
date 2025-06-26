@@ -32,7 +32,7 @@ Este proyecto de ciencia de datos busca predecir si un cliente del Beta Bank aba
 
 -Curva ROC: muestra la sensibilidad frente a la tasa de falsos positivos
 
-![image](https://github.com/user-attachments/assets/b9a7fa05-36e3-43ee-9bb0-e5c604d548a1)
+![image](https://github.com/user-attachments/assets/8f3f189e-21e5-4059-9db8-2101c9be8329)
 
 
 -Matriz de Confusión Interactiva: análisis detallado por categoría
